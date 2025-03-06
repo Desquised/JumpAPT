@@ -12,7 +12,7 @@ This script enhances your **Bash** and **Zsh** command line experience by adding
 When you try to run a command that is not installed on your system, instead of just displaying the standard error, this script does the following:
 
 1. **Detects the “command not found” error.**
-2. **Suggests the installation command** using `apt install` (for Debian/Ubuntu and derivative systems) or `snap install` (if `snap` is available).  *Currently only `apt` and `snap` are supported, but this can be expanded.
+2. **Suggests the installation command** using `apt install` (for Debian/Ubuntu and derivative systems) or `snap install` (if `snap` is available).  *Currently only `apt` and `snap` are supported, but this can be expanded.*
 3. **Display the hint in your terminal** in color so that it is easy to identify.
 4. **Allows you to insert the hint in your terminal** with a simple keyboard shortcut: **Double Esc**.
 
