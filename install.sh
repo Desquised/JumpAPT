@@ -89,15 +89,13 @@ else
     return 1
 fi
 
-# Verifica si ya está instalado y evita duplicados
 if ! grep -q "BEGIN AUTO-INSTALL AUTOFIX COMMAND" "$CONFIG_FILE"; then
     echo "$AUTOFIX_BLOCK" >> "$CONFIG_FILE"
-    echo "Se ha añadido el bloque de autofix en $CONFIG_FILE."
+    echo "Se ha añadido el plugin de JumpAPT en $CONFIG_FILE."
 else
-    echo "El bloque de autofix ya se encuentra en $CONFIG_FILE."
+    echo "El plugin de JumpAPT ya se encuentra en $CONFIG_FILE."
 fi
 
-# Aplica los cambios en la sesión actual
 eval "$AUTOFIX_BLOCK"
 
 echo "$SHELL_NAME configurado correctamente. Los cambios se han aplicado a la sesión actual."
