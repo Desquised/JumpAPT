@@ -13,9 +13,9 @@ fi
 
 if grep -q "BEGIN AUTO-INSTALL AUTOFIX COMMAND" "$CONFIG_FILE"; then
     sed -i '/# BEGIN AUTO-INSTALL AUTOFIX COMMAND/,/# END AUTO-INSTALL AUTOFIX COMMAND/d' "$CONFIG_FILE"
-    echo "Plugin JumpAPT removed from $CONFIG_FILE."
+    echo "Autofix block removed from $CONFIG_FILE."
 else
-    echo "Plugin JumpAPT was not found in $CONFIG_FILE. It may already be uninstalled."
+    echo "Autofix block was not found in $CONFIG_FILE. It may already be uninstalled."
 fi
 
 echo "$SHELL_NAME: Uninstallation completed. Please restart your terminal or run 'source $CONFIG_FILE' to apply the changes."
