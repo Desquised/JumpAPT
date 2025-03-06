@@ -89,9 +89,9 @@ Just press Enter to install it!
 
 * **Increase your Productivity:** Avoid interruptions and manual searches to install commands.
 * **Save Time:** Install commands quickly with a keyboard shortcut.
-* Smoother Workflow:** Continue working without leaving the terminal to search for how to install something.
-* Easy to Use:** Very easy to install and use.
-* Customizable:** If you are an advanced user, you can modify the script to add support for other package managers or customize the hints.
+* **Smoother Workflow:** Continue working without leaving the terminal to search for how to install something.
+* **Easy to Use:** Very easy to install and use.
+* **Customizable:** If you are an advanced user, you can modify the script to add support for other package managers or customize the hints.
 
 **Upcoming Improvements (Ideas) 💡**
 
