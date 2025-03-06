@@ -20,5 +20,5 @@ if grep -q "BEGIN AUTO-INSTALL AUTOFIX COMMAND" "$CONFIG_FILE"; then
         echo "Error removing JumpAPT from $CONFIG_FILE."
     fi
 else
-    echo "JumpAPT was not found in $CONFIG_FILE. It may already be uninstalled."
+    echo "\nJumpAPT was not found in $CONFIG_FILE. It may already be uninstalled."
 fi
