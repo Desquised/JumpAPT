@@ -85,6 +85,39 @@ sudo apt install docker
 
 Just press Enter to install it!
 
+## Uninstall 🗑️
+
+If you want to uninstall the “autofix” from your shell, you can use the `uninstall.sh` script.
+
+**Quick Uninstall with “One-Liner” (Recommended)**.
+
+Similar to the installation, you can use a ``one-liner`` to uninstall the plugin directly from GitHub:
+
+````bash
+source <(curl -sL https://raw.githubusercontent.com/Desquised/JumpAPT/main/uninstall.sh)
+````
+**Download the `uninstall.sh`** script from this repository:
+
+````bash
+wget https://raw.githubusercontent.com/Desquised/JumpAPT/main/uninstall.sh
+# or
+curl -O https://raw.githubusercontent.com/Desquised/JumpAPT/main/uninstall.sh
+````
+
+**Execute Permissions: Make sure that both install.sh and uninstall.sh have execute permissions (`chmod +x install.sh uninstall.sh`). Although this is not strictly necessary with source, it is good practice if someone downloads the scripts and tries to run them directly:**
+
+````bash
+chmod +x uninstall.sh
+````
+
+**Run the uninstallation script:**
+
+````bash
+source uninstall.sh
+````
+
+**Restart your terminal or open a new terminal window** for the changes to the configuration file to take full effect.
+
 **Why use this script? 🤔**
 
 * **Increase your Productivity:** Avoid interruptions and manual searches to install commands.
