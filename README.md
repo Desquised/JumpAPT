@@ -75,13 +75,13 @@ $ docker
 zsh: command not found: docker
 The command 'docker' was not found.
 Press Esc twice to insert: sudo apt install docker <-- TIP
-```
+````
 
 Then, when you press `Esc` `Esc`, the command line will become:
 
 ````bash
 sudo apt install docker
-```
+````
 
 Just press Enter to install it!
 
@@ -96,9 +96,9 @@ Just press Enter to install it!
 **Upcoming Improvements (Ideas) 💡**
 
 * **Support for more package managers:** Add support for `yum`, `dnf`, `pacman`, `brew`, etc.
-* ** **Configuration:** Allow to configure keyboard shortcut or preferred package manager.
-* More informative messages:** Show more details about the hint or the installation process.
-* Automatic uninstallation:** Create an uninstall script to revert changes.
+* **Configuration:** Allow to configure keyboard shortcut or preferred package manager.
+* **More informative messages:** Show more details about the hint or the installation process.
+* **Automatic uninstallation:** Create an uninstall script to revert changes.
 
 **Contributions 🤝**
 
