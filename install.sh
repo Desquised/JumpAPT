@@ -36,7 +36,7 @@ _autofix_command() {
     READLINE_POINT=${#READLINE_LINE}
     rm -f "$SUGGESTION_FILE"
   else
-    echo -e "\e[1;31mNo hay sugerencia almacenada.\e[0m"
+    echo -e "\e[1;31mNo hay sugerencia almacenada.\e[0m\n\nPulse (ctrl + c) para salir..."
   fi
 }
 
@@ -76,7 +76,7 @@ _autofix_command() {
     zle reset-prompt
     rm -f "$SUGGESTION_FILE"
   else
-    echo -e "\e[1;31mNo hay sugerencia almacenada.\e[0m"
+    echo -e "\e[1;31mNo hay sugerencia almacenada.\e[0m\n\nPulse (ctrl + c) para salir..."
   fi
 }
 
