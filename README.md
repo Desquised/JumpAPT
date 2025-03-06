@@ -35,3 +35,70 @@ With just two presses of the Esc key, you can insert the suggested installation 
    wget https://raw.githubusercontent.com/Desquised/JumpAPT/main/install.sh
                                      # or
    curl -O https://raw.githubusercontent.com/Desquised/JumpAPT/main/install.sh
+
+2. **Ejecuta el script de instalación:**
+
+   ```bash
+   source install.sh
+   ```
+
+   **Importante:** Debes ejecutar el script con `source install.sh` (o `. install.sh`) para que los cambios se apliquen correctamente en tu sesión actual y se modifique tu archivo de configuración.
+
+3. **Reinicia tu terminal o abre una nueva ventana de terminal** para que los cambios en el archivo de configuración surtan efecto completamente.  (Aunque el script ya aplica los cambios a la sesión actual, reiniciar asegura que todo esté configurado correctamente para futuras sesiones).
+
+¡Listo! Ya tienes el autofix de comandos instalado y funcionando.
+
+**Uso ⌨️**
+
+1. **Intenta ejecutar un comando que no está instalado** en tu sistema, por ejemplo: `htop` (si no lo tienes instalado).
+2. **Verás un mensaje en la terminal** que te indica que el comando no se encontró y te sugiere el comando de instalación (por ejemplo, `sudo apt install htop`).  La sugerencia estará resaltada en color.
+3. **Pulsa la tecla `Esc` dos veces rápidamente `Esc` `Esc`.**
+4. **El comando de instalación sugerido se insertará automáticamente en tu terminal.**
+5. **Presiona Enter** para ejecutar el comando de instalación.
+6. **Introduce tu contraseña de administrador (si es necesario)** e instala el comando.
+
+¡Ahora puedes usar el comando que necesitabas sin interrumpir tu flujo de trabajo!
+
+**Ejemplo**
+
+```bash
+$ docker
+zsh: comando no encontrado: docker
+El comando 'docker' no se encontró.
+Pulsa Esc dos veces para insertar: sudo apt install docker  <-- SUGERENCIA
+```
+
+Luego, al pulsar `Esc` `Esc`, la línea de comandos se convertirá en:
+
+```bash
+$ sudo apt install docker
+```
+
+¡Solo tienes que presionar Enter para instalarlo!
+
+**¿Por qué usar este script? 🤔**
+
+* **Aumenta tu Productividad:** Evita interrumpciones y búsquedas manuales para instalar comandos.
+* **Ahorra Tiempo:** Instala comandos rápidamente con un atajo de teclado.
+* **Flujo de Trabajo Más Fluido:**  Continúa trabajando sin salir de la terminal para buscar cómo instalar algo.
+* **Fácil de Usar:**  Instalación y uso muy sencillos.
+* **Personalizable:**  Si eres un usuario avanzado, puedes modificar el script para añadir soporte para otros gestores de paquetes o personalizar las sugerencias.
+
+**Próximas Mejoras (Ideas) 💡**
+
+* **Soporte para más gestores de paquetes:**  Añadir soporte para `yum`, `dnf`, `pacman`, `brew`, etc.
+* **Configuración:**  Permitir configurar el atajo de teclado o el gestor de paquetes preferido.
+* **Mensajes más informativos:**  Mostrar más detalles sobre la sugerencia o el proceso de instalación.
+* **Desinstalación automática:**  Crear un script de desinstalación para revertir los cambios.
+
+**Contribuciones 🤝**
+
+¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar este script, encuentras errores o quieres añadir soporte para otros shells o gestores de paquetes, siéntete libre de abrir un "Issue" o enviar un "Pull Request".
+
+**Licencia 📄**
+
+Este proyecto está bajo la licencia **MIT License**. Consulta el archivo `LICENSE` para más detalles.  (Si decides añadir un archivo de licencia).
+
+**Author: Rostovhia 👤**
+
+¡Espero que este script te sea útil!  Si te gusta, ¡déjame una estrella en el repositorio! ⭐
