@@ -99,6 +99,6 @@ $ sudo apt install docker
 
 Este proyecto está bajo la licencia **MIT License**. Consulta el archivo `LICENSE` para más detalles.  (Si decides añadir un archivo de licencia).
 
-**Author: Rostovhia 👤**
+**Author: Encrypted 👤**
 
 ¡Espero que este script te sea útil!  Si te gusta, ¡déjame una estrella en el repositorio! ⭐
