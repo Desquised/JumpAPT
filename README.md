@@ -35,70 +35,79 @@ With just two presses of the Esc key, you can insert the suggested installation 
    wget https://raw.githubusercontent.com/Desquised/JumpAPT/main/install.sh
                                      # or
    curl -O https://raw.githubusercontent.com/Desquised/JumpAPT/main/install.sh
+   ````
 
-2. **Ejecuta el script de instalación:**
+   **Quick Installation with use of temporary memory (Recommended)**
+
+   For a quick and easy in-memory installation (without saving the install.sh file), you can use the following “one-liner”    command in your Bash or Zsh terminal:
+
+   ```bash
+   source <(curl -sL https://raw.githubusercontent.com/Desquised/JumpAPT/main/install.sh)
+   ```
+
+2. **Run the installation script:**
 
    ```bash
    source install.sh
    ```
 
-   **Importante:** Debes ejecutar el script con `source install.sh` (o `. install.sh`) para que los cambios se apliquen correctamente en tu sesión actual y se modifique tu archivo de configuración.
+   **Important:** You must run the script with `source install.sh` (or `. install.sh`) for the changes to be applied correctly in your current session and your configuration file to be modified..
 
-3. **Reinicia tu terminal o abre una nueva ventana de terminal** para que los cambios en el archivo de configuración surtan efecto completamente.  (Aunque el script ya aplica los cambios a la sesión actual, reiniciar asegura que todo esté configurado correctamente para futuras sesiones).
+3. **Restart your terminal or open a new terminal window** for the changes in the configuration file to take full effect. (Although the script already applies the changes to the current session, restarting ensures that everything is set up correctly for future sessions.)
 
-¡Listo! Ya tienes el autofix de comandos instalado y funcionando.
+That's it! You now have the command autofix installed and running.
 
-**Uso ⌨️**
+**Use ⌨️**
 
-1. **Intenta ejecutar un comando que no está instalado** en tu sistema, por ejemplo: `htop` (si no lo tienes instalado).
-2. **Verás un mensaje en la terminal** que te indica que el comando no se encontró y te sugiere el comando de instalación (por ejemplo, `sudo apt install htop`).  La sugerencia estará resaltada en color.
-3. **Pulsa la tecla `Esc` dos veces rápidamente `Esc` `Esc`.**
-4. **El comando de instalación sugerido se insertará automáticamente en tu terminal.**
-5. **Presiona Enter** para ejecutar el comando de instalación.
-6. **Introduce tu contraseña de administrador (si es necesario)** e instala el comando.
+1. **Try running a command that is not installed** on your system, for example: `htop` (if you don't have it installed).
+2. **You will see a message in the terminal** telling you that the command was not found and suggesting the installation command (e.g. `sudo apt install htop`).  The suggestion will be highlighted in color.
+3. **Press the `Esc` key twice quickly `Esc` `Esc` **.
+4. **The suggested installation command will be automatically inserted into your terminal.
+5. **Press Enter** to execute the installation command.
+6. **Enter your administrator password (if necessary)** and install the command.
 
-¡Ahora puedes usar el comando que necesitabas sin interrumpir tu flujo de trabajo!
+Now you can use the command you needed without interrupting your workflow!
 
-**Ejemplo**
+**Example**.
 
-```bash
+````bash
 $ docker
-zsh: comando no encontrado: docker
-El comando 'docker' no se encontró.
-Pulsa Esc dos veces para insertar: sudo apt install docker  <-- SUGERENCIA
+zsh: command not found: docker
+The command 'docker' was not found.
+Press Esc twice to insert: sudo apt install docker <-- TIP
 ```
 
-Luego, al pulsar `Esc` `Esc`, la línea de comandos se convertirá en:
+Then, when you press `Esc` `Esc`, the command line will become:
 
-```bash
-$ sudo apt install docker
+````bash
+sudo apt install docker
 ```
 
-¡Solo tienes que presionar Enter para instalarlo!
+Just press Enter to install it!
 
-**¿Por qué usar este script? 🤔**
+**Why use this script? 🤔**
 
-* **Aumenta tu Productividad:** Evita interrumpciones y búsquedas manuales para instalar comandos.
-* **Ahorra Tiempo:** Instala comandos rápidamente con un atajo de teclado.
-* **Flujo de Trabajo Más Fluido:**  Continúa trabajando sin salir de la terminal para buscar cómo instalar algo.
-* **Fácil de Usar:**  Instalación y uso muy sencillos.
-* **Personalizable:**  Si eres un usuario avanzado, puedes modificar el script para añadir soporte para otros gestores de paquetes o personalizar las sugerencias.
+* **Increase your Productivity:** Avoid interruptions and manual searches to install commands.
+* **Save Time:** Install commands quickly with a keyboard shortcut.
+* Smoother Workflow:** Continue working without leaving the terminal to search for how to install something.
+* Easy to Use:** Very easy to install and use.
+* Customizable:** If you are an advanced user, you can modify the script to add support for other package managers or customize the hints.
 
-**Próximas Mejoras (Ideas) 💡**
+**Upcoming Improvements (Ideas) 💡**
 
-* **Soporte para más gestores de paquetes:**  Añadir soporte para `yum`, `dnf`, `pacman`, `brew`, etc.
-* **Configuración:**  Permitir configurar el atajo de teclado o el gestor de paquetes preferido.
-* **Mensajes más informativos:**  Mostrar más detalles sobre la sugerencia o el proceso de instalación.
-* **Desinstalación automática:**  Crear un script de desinstalación para revertir los cambios.
+* **Support for more package managers:** Add support for `yum`, `dnf`, `pacman`, `brew`, etc.
+* ** **Configuration:** Allow to configure keyboard shortcut or preferred package manager.
+* More informative messages:** Show more details about the hint or the installation process.
+* Automatic uninstallation:** Create an uninstall script to revert changes.
 
-**Contribuciones 🤝**
+**Contributions 🤝**
 
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar este script, encuentras errores o quieres añadir soporte para otros shells o gestores de paquetes, siéntete libre de abrir un "Issue" o enviar un "Pull Request".
+Contributions are welcome! If you have ideas to improve this script, find bugs or want to add support for other shells or package managers, feel free to open an Issue or submit a Pull Request.
 
-**Licencia 📄**
+**License 📄**
 
-Este proyecto está bajo la licencia **MIT License**. Consulta el archivo `LICENSE` para más detalles.  (Si decides añadir un archivo de licencia).
+This project is licensed under the **MIT License**. See the `LICENSE` file for details (if you decide to add a license file).
 
 **Author: Encrypted 👤**
 
-¡Espero que este script te sea útil!  Si te gusta, ¡déjame una estrella en el repositorio! ⭐
+I hope you find this script useful!  If you like it, leave me a star in the repository! ⭐
